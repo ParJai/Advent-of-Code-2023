@@ -1,5 +1,6 @@
 
-f = open('inputs/day2.txt').read().splitlines()
+testing = True
+f = open(f'inputs/{"samples" if testing else ""}/day2.txt').read().splitlines()
 
 def part1():
     sum = 0
