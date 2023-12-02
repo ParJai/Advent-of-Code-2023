@@ -17,7 +17,7 @@ def part2():
         for char in range(len(line)):
             if line[char] in '1234567890': num += line[char]
             for digit in ['one1', 'two2', 'three3', 'four4', 'five5', 'six6', 'seven7', 'eight8', 'nine9']:
-                if line[char:(char+len(digit)-1)] == digit[-len(digit):-1]: num += digit[-1]
+                if line[char:(char+len(digit)-1)] == digit[:-1]: num += digit[-1]
         sum += 10*int(num[0]) + int(num[-1])
     return sum
 
