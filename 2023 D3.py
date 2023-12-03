@@ -72,7 +72,6 @@ def part2():
                     if grid[pos[1]][pos[0]].isdigit():
                         numsAdj.append(getNum(pos[0], pos[1], grid))
                 numsAdj = list(set(numsAdj))
-                print(numsAdj)
                 if len(numsAdj) == 2: out.append(int(numsAdj[0][0]) * int(numsAdj[1][0]))
     return sum(out)
 
