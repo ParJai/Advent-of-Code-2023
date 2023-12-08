@@ -1,6 +1,7 @@
 
+day = 0
 testing = True
-f = open(f'inputs/{"samples" if testing else ""}/dayX.txt').read().splitlines()
+f = open(f'inputs/{"samples" if testing else ""}/day{day}.txt').read().splitlines()
 
 def part1():
     return
